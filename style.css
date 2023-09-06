@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar and Header */
+header {
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #92a8d1;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul li {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar ul li:hover {
+    background-color: #92a8d1;
+    border-radius: 5px;
+}
+
+.navbar ul li {
+    padding: 5px 14px;
+    list-style-type: none;
+}
+
+/* Container and Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.container-article {
+    flex: 3;
+    text-align: center;
+}
+
+.container-aside {
+    flex: 1;
+    text-align: center;
+    margin-right: 30px;
+    align-self: stretch;
+}
+
+
+/*Image Slider */
+.slider {
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 1500px;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slide-1:target ~ .slider-container {
+    left: 0px;
+}
+
+#slide-2:target ~ .slider-container {
+    left: -500px;
+}
+
+#slide-3:target ~ .slider-container {
+    left: -1000px;
+}
+
+.circles {
+    position: relative;
+    top: -20px;
+}
+
+.circles a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: rgb(0, 157, 255);
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #92a8d1;
+    color: white;
+    text-align: center;
+}
