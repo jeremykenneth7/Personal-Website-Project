@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio dan Website Pribadi Jeremy Kenneth</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-    <header style="text-align: center;">
-        <nav class="navbar">
+    <header class="header">
+        <h1 class="title"><a>Jeremy Kenneth Personal Website</a></h1>
+        <nav>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href=resume.pdf>Resume</a></li>
@@ -22,76 +24,65 @@
     </header>
 
     <main>
-        <div class="flex-container">
-            <div class="container-article">
-                <ul class="cards">
-                    <li class="card">
-                        <div class="card-content">
-                            <article>
-                                <header>
-                                    <h1>My Portofolio</h1>
-                                    <h4>Crafting a compelling portfolio website to showcase my extensive experience in
-                                        front-end
-                                        development has been a
-                                        rewarding journey. Through a dynamic blend of creativity and technical prowess,
-                                        I
-                                        have
-                                        meticulously curated a collection
-                                        of projects that encapsulate my proficiency in crafting seamless user
-                                        experiences.
-                                        From
-                                        responsive designs that adapt
-                                        flawlessly to diverse screen sizes to interactive interfaces that engage users
-                                        intuitively, my portfolio reflects a
-                                        deep-rooted passion for translating concepts into captivating visual narratives.
-                                        Each
-                                        project stands as a testament to
-                                        my mastery of HTML, CSS, JavaScript, and other cutting-edge technologies, which
-                                        I
-                                        seamlessly integrate to breathe life
-                                        into my designs.</h4>
+        <div class="container">
+            <div class="item1">
+                <article>
+                    <header>
+                        <h1>My Portofolio</h1>
+                        <h4>Crafting a compelling portfolio website to showcase my extensive experience in
+                            front-end
+                            development has been a
+                            rewarding journey. Through a dynamic blend of creativity and technical prowess,
+                            I
+                            have
+                            meticulously curated a collection
+                            of projects that encapsulate my proficiency in crafting seamless user
+                            experiences.
+                            From
+                            responsive designs that adapt
+                            flawlessly to diverse screen sizes to interactive interfaces that engage users
+                            intuitively, my portfolio reflects a
+                            deep-rooted passion for translating concepts into captivating visual narratives.
+                            Each
+                            project stands as a testament to
+                            my mastery of HTML, CSS, JavaScript, and other cutting-edge technologies, which
+                            I
+                            seamlessly integrate to breathe life
+                            into my designs.</h4>
 
-                                    <div class="slider">
-                                        <span id="slide-1"></span>
-                                        <span id="slide-2"></span>
-                                        <span id="slide-3"></span>
-                                        <div class="slider-container">
-                                            <img src="/image/gunung.png" class="slide" width="500" height="300" />
-                                            <img src="/image/tsunami1.png" class="slide" width="500" height="300" />
-                                            <img src="/image/bimbel.png" class="slide" width="500" height="300" />
-                                        </div>
-                                        <div class="circles">
-                                            <a href="#slide-1"></a>
-                                            <a href="#slide-2"></a>
-                                            <a href="#slide-3"></a>
-                                        </div>
-                                    </div>
-                                    
-                                </header>
-                            </article>
+                        <div class="slider">
+                            <span id="slide-1"></span>
+                            <span id="slide-2"></span>
+                            <span id="slide-3"></span>
+                            <div class="slider-container">
+                                <img src="/image/gunung.png" class="slide" width="500" height="300" />
+                                <img src="/image/tsunami1.png" class="slide" width="500" height="300" />
+                                <img src="/image/bimbel.png" class="slide" width="500" height="300" />
+                            </div>
+                            <div class="circles">
+                                <a href="#slide-1"></a>
+                                <a href="#slide-2"></a>
+                                <a href="#slide-3"></a>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </header>
+                </article>
             </div>
 
-            <aside>
-                <article>
-                    <div class="container-aside">
-                        <ul class="cards">
-                            <li class="card">
-                                <br>
-                                <div class="card-content">
-                                    <img src="image/profile.jpg" width="150" height="150" style="border-radius: 50%;" />
-                                    <h1>Jeremy Kenneth Harnanto</h1>
-                                    <p>Front-End Web Developer and Designer</p>
-                                </div>
-                                </l1>
-                        </ul>
-                    </div>
-                </article>
-            </aside>
+            <div class="item2">
+                <aside>
+                    <article>
+                        <img src="image/profile.jpg" width="150" height="150" style="border-radius: 50%;"
+                            class="center" />
+                        <h1>Jeremy Kenneth Harnanto</h1>
+                        <p>Front-End Web Developer and Designer</p>
+                    </article>
+                </aside>
+            </div>
+
         </div>
     </main>
+
     <footer>
         &copy; Copyright 2023 Jeremy Kenneth Harnanto
     </footer>
